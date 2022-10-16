@@ -1,0 +1,37 @@
+{
+  "a_card_id_here": {
+    "description": "A short description to remember what this card is about",
+    "type": "media|mode|action. The card functionality. The available options are: 'media' to play a media file, 'mode' to set a specific mode for multiple media files per card, 'action' if a card has specific code to run like a shutdown",
+    "data": {
+      "default": "The default value to read if no other setting is found.",
+      "en": "/example/file/to/run/in/this/mode",
+      "ar": "/example/file/to/run/in/this/mode",
+      "de": "/example/file/to/run/in/this/mode"
+    }
+  },
+  "123": {
+    "description": "German children music: 'summ summ summ'",
+    "type": "media",
+    "data": {
+      "default": "./media/summ.mp3",
+      "de": "./media/summ.mp3"
+    }
+  },
+  "456": {
+    "description": "Setting the language to Arabic",
+    "type": "mode",
+    "data": {
+      "default": "ar"
+    }
+  },
+  "789": {
+    "description": "a dog",
+    "type": "media",
+    "data": {
+      "default": "./media/dog/arabic.mp3",
+      "ar": "./media/dog/arabic.mp3",
+      "en": "./media/dog/english.mp3",
+      "de": "./media/dog/german.mp3"
+    }
+  }
+}
