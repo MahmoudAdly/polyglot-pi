@@ -14,7 +14,7 @@ sudo apt install python3-dev python3-pip
 sudo pip3 install spidev
 sudo pip3 install mfrc522
 
-pip install python-vlc
+sudo pip3 install python-vlc
 ```
 
 ## Step 2: Setup the config file and media files
