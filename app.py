@@ -64,7 +64,7 @@ try:
 
       id, text = reader.read()
 
-      print("A card found. ID: " + id)
+      print("A card found. ID: " + str(id))
 
       if id == last_card_id:
         print('Same card was found. Waiting for a new card.')

@@ -19,7 +19,7 @@ while True:
     print("Please scan a card now, or 'Q' to exit:")
     
     id, text = reader.read()
-    print("The card ID is: " + id)
+    print("The card ID is: " + str(id))
 
     description = input("Please enter a short description to remember this ID, or 'Q' to exit: ")
 
