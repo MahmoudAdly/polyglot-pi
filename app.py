@@ -8,7 +8,7 @@ import vlc
 reader = SimpleMFRC522()
 CONFIG_FILE_NAME = "config.json"
 config_object = None
-current_mode = None
+current_mode = "default"
 last_card_id = None
 player = None
 
