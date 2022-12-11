@@ -25,7 +25,7 @@ with open(CONFIG_FILE_NAME, 'r') as openfile:
 
 while True:
   try:
-    description = input("Please enter a short description to remember the new card ID, or 'Q' to exit: ")
+    description = input("Please enter a short description to remember the next card ID, or 'Q' to exit: ")
 
     if description == "Q":
       update_config()
@@ -43,6 +43,7 @@ while True:
       config_object[id] = {}
 
     config_object[id]["description"] = description
+    print('New card config saved!')
   except ValueError:
     print("Sorry, I didn't understand that.")
     # Better try again... Return to the start of the loop

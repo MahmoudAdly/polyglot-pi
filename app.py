@@ -64,13 +64,14 @@ try:
 
       id, text = reader.read()
 
-      print("A card found. ID: " + str(id))
+      id_str = str(id)
+      print("A card found. ID: " + id_str)
 
       if id == last_card_id:
         print('Same card was found. Waiting for a new card.')
       else:
-        last_card_id = id
-        handle_card_id(id)
+        last_card_id = id_str
+        handle_card_id(id_str)
     except ValueError:
       print("Sorry, I didn't understand that.")
       # Better try again... Return to the start of the loop
