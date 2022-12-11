@@ -16,12 +16,14 @@ def beep():
   print('\a \a \a')
 
 def play_media(file_path):
+  global player
   if player != None: player.stop()
   player = vlc.MediaPlayer(file_path)
   player.play()
 
 def handle_card_id(id):
   print('Pocessing card ID...')
+  global current_mode
   if id not in config_object:
     # Make a beep
     beep()
