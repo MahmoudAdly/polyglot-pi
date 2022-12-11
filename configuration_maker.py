@@ -10,6 +10,7 @@ reader = SimpleMFRC522()
 
 
 def update_config():
+  print('Saving new config file...')
   # Write the new config object to the config file
   json_object = json.dumps(config_object, indent=2)
   with open(CONFIG_FILE_NAME, "w") as outfile:
