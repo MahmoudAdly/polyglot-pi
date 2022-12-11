@@ -25,18 +25,18 @@ with open(CONFIG_FILE_NAME, 'r') as openfile:
 
 while True:
   try:
-    print("Please scan a card now, or 'Q' to exit:")
-    
-    id, text = reader.read()
-    print("The card ID is: " + str(id))
-
-    description = input("Please enter a short description to remember this ID, or 'Q' to exit: ")
+    description = input("Please enter a short description to remember the new card ID, or 'Q' to exit: ")
 
     if description == "Q":
       update_config()
       print("Config update is done! Goodbye.")
       exit(0)
       break
+
+    print("Please scan the card now.")
+    
+    id, text = reader.read()
+    print("The card ID is: " + str(id))
 
     # Make sure the config key has an initialised empty dict value if it was new
     if id not in config_object:
